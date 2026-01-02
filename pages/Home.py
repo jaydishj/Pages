@@ -165,7 +165,20 @@ and image recognition.
 
 Designed for **students, farmers, researchers, and nature enthusiasts**.
 """)
-
+st.markdown(
+    """
+    <h3 style="cursor:pointer; color:#1f77b4;">
+        👉 Proceed to Classification
+    </h3>
+    <script>
+        const header = document.querySelector('h3');
+        header.onclick = function() {
+            window.location.href = '/Classification';
+        }
+    </script>
+    """,
+    unsafe_allow_html=True
+)
 st.divider()
 st.link_button(
     label="🚀Open INSECTIFICA",
